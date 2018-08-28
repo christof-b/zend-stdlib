@@ -21,13 +21,39 @@ matrix:
       env:
         - EXECUTE_TEST_COVERALLS=true
     - php: 7
-    - php: hhvm 
-  allow_failures:
-    - php: hhvm
-
-notifications:
-  irc: "irc.freenode.org#zftalk.dev"
-  email: false
+      env:
+        - DEPS=lowest
+    - php: 7
+      env:
+        - DEPS=locked
+        - LEGACY_DEPS="phpbench/phpbench phpunit/phpunit"
+    - php: 7
+      env:
+        - DEPS=latest
+    - php: 7.1
+      env:
+        - DEPS=lowest
+    - php: 7.1
+      env:
+        - DEPS=locked
+        - CS_CHECK=true
+        - BENCHMARKS=true
+        - TEST_COVERAGE=true
+    - php: 7.1
+      env:
+        - DEPS=latest
+    - php: 7.2
+      env:
+        - DEPS=lowest
+    - php: 7.2
+      env:
+        - DEPS=locked
+    - php: 7.2
+      env:
+        - DEPS=latest
+    - php: nightly
+      env:
+        - DEPS=latest
 
 before_install:
   - if [[ $EXECUTE_TEST_COVERALLS != 'true' ]]; then phpenv config-rm xdebug.ini || return 0 ; fi

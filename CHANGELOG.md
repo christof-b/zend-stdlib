@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 2.7.8 - 2021-07-31
+
+### Added
+
+- [#87](https://github.com/zendframework/zend-stdlib/pull/87) adds support for PHP 7.2.
+
+### Changed
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- [#87](https://github.com/zendframework/zend-stdlib/pull/87) removes support for HHVM.
+
+### Fixed
+
+- [#91](https://github.com/zendframework/zend-stdlib/pull/91) fixes behavior in the `ArrayObject` implementation that was not
+  compatible with PHP 7.3.
+
 ## 2.7.7 - 2016-04-12
 
 ### Added
