@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 2.7.8 - 2021-07-31
+## 2.7.9 - 2021-07-31
 
 ### Added
 
@@ -24,6 +24,10 @@ All notable changes to this project will be documented in this file, in reverse 
 
 - [#91](https://github.com/zendframework/zend-stdlib/pull/91) fixes behavior in the `ArrayObject` implementation that was not
   compatible with PHP 7.3.
+
+## 2.7.8 - 2020-01-20
+
+Link to new repository
 
 ## 2.7.7 - 2016-04-12
 
